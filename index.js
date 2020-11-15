@@ -5,7 +5,7 @@ const favicon = document.querySelector("link[rel*='icon']") || document.createEl
 
 favicon.type = "image/x-icon";
 favicon.rel = "shortcut icon";
-favicon.href = "https://media.discordapp.net/attachments/757231447172972606/758669954555576330/220px-Kmfdmgodlike.png";
+favicon.href = "https://media.discordapp.net/attachments/772064957793435678/777660399821652008/bomb_PNG16.png";
 
 function createGUI () {
   document.getElementById("background-image").src = "https://media.discordapp.net/attachments/757231447172972606/777658230380822538/81uilGLQYBL.png?width=671&height=671";

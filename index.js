@@ -10,6 +10,7 @@ favicon.href = "https://media.discordapp.net/attachments/772064957793435678/7776
 function createGUI () {
   document.getElementById("background-image").src = "https://media.discordapp.net/attachments/757231447172972606/777658230380822538/81uilGLQYBL.png?width=671&height=671";
   document.getElementsByTagName("head")[0].appendChild(favicon);
+  document.querySelector("body").style.backgroundColor = "black";
 }
 
 createGUI();

@@ -12,6 +12,9 @@ function createGUI () {
   document.getElementsByTagName("head")[0].appendChild(favicon);
   document.querySelector("body").style.backgroundColor = "black";
   document.querySelector("body").style.color = "red";
+  
+  document.getElementById("AW-CHOOSE_SUB").style.backgroundColor = "black";
+  document.getElementById("AW-CHOOSE_SUB").style.color = "red";
 }
 
 createGUI();

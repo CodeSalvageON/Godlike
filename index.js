@@ -2,6 +2,9 @@
 // Created by CodeSalvageON and Arjhan Toteck
 
 const favicon = document.querySelector("link[rel*='icon']") || document.createElement("link");
+const gui = `
+<button>Change Background Image</button><button>Change Background Color</button>
+`;
 
 favicon.type = "image/x-icon";
 favicon.rel = "shortcut icon";
@@ -15,6 +18,8 @@ function createGUI () {
   
   document.getElementById("AW-CHOOSE_SUB").style.backgroundColor = "black";
   document.getElementById("AW-CHOOSE_SUB").style.color = "red";
+  
+  document.getElementById("main-section").innerHTML = gui + document.getElementById("main-section").innerHTML;
 }
 
 createGUI();

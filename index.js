@@ -14,6 +14,7 @@ const gui = `
 }
 
 .addon_button:hover {
+  color: black;
   background-color: white;
 }
 </style>

@@ -3,7 +3,17 @@
 
 const favicon = document.querySelector("link[rel*='icon']") || document.createElement("link");
 const gui = `
-<button>Change Background Image</button><button>Change Background Color</button>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+.addon_button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-family: 'Roboto Mono', monospace;
+}
+</style>
+<button class="addon_button">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon-button">Change Icon</button>
 `;
 
 favicon.type = "image/x-icon";
@@ -20,6 +30,10 @@ function createGUI () {
   document.getElementById("AW-CHOOSE_SUB").style.color = "red";
   
   document.getElementById("main-section").innerHTML = gui + document.getElementById("main-section").innerHTML;
+}
+
+function changeBackgroundImage () {
+  
 }
 
 createGUI();

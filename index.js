@@ -11,9 +11,13 @@ const gui = `
   background-color: black;
   border: 1px solid white;
   font-family: 'Roboto Mono', monospace;
+
+.addon_button:hover {
+  background-color: white;
+}
 }
 </style>
-<button class="addon_button">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon-button">Change Icon</button>
+<button class="addon_button">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon_button">Change Icon</button>
 `;
 
 favicon.type = "image/x-icon";

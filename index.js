@@ -49,4 +49,16 @@ function changeBackgroundImage () {
   }
 }
 
+function changeBackgroundColor () {
+  let background_color_prompt = prompt("Background Color: ");
+  
+  if (background_color_prompt === null || background_color_prompt === undefined || background_color_prompt === "") {
+    return false;
+  }
+  
+  else {
+    document.querySelector("body").style.backgroundColor = background_color_prompt;
+  }
+}
+
 createGUI();

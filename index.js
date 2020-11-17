@@ -40,7 +40,13 @@ function createGUI () {
 function changeBackgroundImage () {
   let background_image_prompt = prompt("Background Image Link: ");
   
-  document.getElementById("background-image").src = background_image_prompt;
+  if (background_image_prompt === null || background_image_prompt === undefined || background_image_prompt === "") {
+    return false;
+  }
+  
+  else {
+    document.getElementById("background-image").src = background_image_prompt;
+  }
 }
 
 createGUI();

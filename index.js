@@ -35,6 +35,7 @@ function createGUI () {
   
   document.getElementById("main-section").innerHTML = gui + document.getElementById("main-section").innerHTML;
   document.getElementById("lesson-view").innerHTML = gui + document.getElementById("lesson-view").innerHTML;
+  document.getElementById("html5Iframe-wrapper").innerHTML = gui + document.getElementById("html5Iframe-wrapper").innerHTML;
 }
 
 function changeBackgroundImage () {

@@ -38,7 +38,9 @@ function createGUI () {
 }
 
 function changeBackgroundImage () {
+  let background_image_prompt = prompt("Background Image Link: ");
   
+  document.getElementById("background-image").src = background_image_prompt;
 }
 
 createGUI();

@@ -18,7 +18,7 @@ const gui = `
   background-color: white;
 }
 </style>
-<button class="addon_button">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon_button">Change Icon</button>
+<button class="addon_button" onclick="changeBackgroundImage()">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon_button">Change Icon</button>
 `;
 
 favicon.type = "image/x-icon";

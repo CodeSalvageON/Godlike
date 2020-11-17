@@ -35,6 +35,7 @@ function createGUI () {
   document.getElementById("AW-CHOOSE_SUB").style.color = "red";
   
   document.getElementById("main-section").innerHTML = gui + document.getElementById("main-section").innerHTML;
+  document.getElementById("lesson-view").innerHTML = gui + document.getElementById("lesson-view").innerHTML;
 }
 
 function changeBackgroundImage () {

@@ -18,7 +18,7 @@ const gui = `
   background-color: white;
 }
 </style>
-<button class="addon_button" onclick="changeBackgroundImage()">Change Background Image</button><button class="addon_button">Change Background Color</button><button class="addon_button">Change Icon</button>
+<button class="addon_button" onclick="changeBackgroundImage()">Change Background Image</button><button class="addon_button" onclick="changeBackgroundColor()">Change Background Color</button><button class="addon_button">Change Icon</button>
 `;
 
 favicon.type = "image/x-icon";
@@ -58,6 +58,20 @@ function changeBackgroundColor () {
   
   else {
     document.querySelector("body").style.backgroundColor = background_color_prompt;
+  }
+}
+
+function changeIcon () {
+  let icon_prompt = prompt("Icon Image Link: ");
+  
+  if (icon_prompt === null || icon_prompt === undefined || icon_prompt === "") {
+    return false;
+  }
+  
+  else {
+    favicon.href = icon_prompt;
+    
+    document.getElementsByTagName("head")[0].appendChild(favicon);
   }
 }
 

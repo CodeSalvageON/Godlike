@@ -45,6 +45,6 @@ function createShell () {
   else if (shell_prompt.toLowerCase() === "open_lesson_iframe") {
     const iframe = document.querySelector("iframe").src;
     
-    window.open(iframe, "Lesson Frame", windowFeatures);
+    window.open(document.querySelector("iframe").src);
   }
 }

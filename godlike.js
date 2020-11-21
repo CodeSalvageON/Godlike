@@ -53,6 +53,7 @@ function createShell () {
   else if (shell_prompt.toLowerCase() === "open_lesson_iframe") {
     const iframe = document.querySelector("iframe").src;
     
+    alert(iframe);
     openInNewTab(iframe);
   }
 }

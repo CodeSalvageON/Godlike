@@ -1,5 +1,8 @@
 // Godlike Add-on
 
+let windowObjectReference;
+let windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
 const command_list = `
 help - Lists all commands.
 change_icon - Allows the user to change the page icon.
@@ -42,6 +45,6 @@ function createShell () {
   else if (shell_prompt.toLowerCase() === "open_lesson_iframe") {
     const iframe = document.querySelector("iframe").src;
     
-    window.open(iframe);
+    window.open(iframe, "Lesson Frame", windowFeatures);
   }
 }

@@ -1,8 +1,14 @@
 // Godlike Add-on
 
+const command_list = `
+help - Lists all commands.
+`;
+
 function createShell () {
-  console.log("== Godlike Shell for i-Ready ==");
-  console.log("Type help for all commands.");
+  alert("Type help for all commands.");
+  let shell_prompt = prompt("Command: ");
   
-  let console_response = readline();
+  if (shell_prompt.toLowerCase() === "help") {
+    alert(command_list);
+  }
 }

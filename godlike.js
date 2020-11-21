@@ -55,5 +55,6 @@ function createShell () {
     
     alert(iframe);
     openInNewTab(iframe);
+    alert("If a new tab is not shown, click on the blocked popup icon and select 'Always allow popups and redirects from https://login.i-ready.com/'");
   }
 }

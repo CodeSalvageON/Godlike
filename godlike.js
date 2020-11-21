@@ -9,7 +9,15 @@ change_icon - Allows the user to change the page icon.
 change_bg_color - Allows the user to change the page's background color.
 change_bg_img - Allows the user to change the page's background image.
 open_lesson_iframe - Opens the original lesson's source in a new tab. Comes in handy more than you think.
+open_iready_login - Opens i-Ready in different tabs.
 `;
+
+function openInNewTab(href) {
+  Object.assign(document.createElement('a'), {
+    target: '_blank',
+    href: href,
+  }).click();
+}
 
 function createShell () {
   alert("Type help for all commands.");

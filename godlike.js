@@ -5,6 +5,7 @@ help - Lists all commands.
 change_icon - Allows the user to change the page icon.
 change_bg_color - Allows the user to change the page's background color.
 change_bg_img - Allows the user to change the page's background image.
+open_lesson_iframe - Opens the original lesson's source in a new tab. Comes in handy more than you think.
 `;
 
 function createShell () {
@@ -36,5 +37,11 @@ function createShell () {
     const bg_img_prompt = prompt("Background Image Link: ");
     
     document.querySelector("body").style.backgroundImage = `url("` + bg_img_prompt + `")`;
+  }
+  
+  else if (shell_prompt.toLowerCase() === "open_lesson_iframe") {
+    const iframe = document.querySelector("iframe").src;
+    
+    window.open(iframe);
   }
 }

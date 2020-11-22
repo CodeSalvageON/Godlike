@@ -10,6 +10,7 @@ change_bg_color - Allows the user to change the page's background color.
 change_bg_img - Allows the user to change the page's background image.
 open_lesson_iframe - Opens the original lesson's source in a new tab. Comes in handy more than you think.
 open_iready_login - Opens i-Ready in different tabs.
+skip_frame - Allows you to choose how many frames of a lesson to skip.
 `;
 
 function openInNewTab(href) {

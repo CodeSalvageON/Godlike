@@ -71,3 +71,5 @@ function createShell () {
     createShell();
   }
 }
+
+createShell();

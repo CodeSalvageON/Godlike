@@ -58,4 +58,16 @@ function createShell () {
     openInNewTab(iframe);
     alert("If a new tab is not shown, click on the blocked popup icon and select 'Always allow popups and redirects from https://login.i-ready.com/'");
   }
+  
+  else if (shell_prompt.toLowerCase() === "skip_frame") {
+    const frames_skipped = prompt('Number of frames skipped?: ');
+    
+    document.getElementById('html5Iframe').contentWindow._gsScope.jumpToFrame(frames_skipped);
+  }
+  
+  else {
+    alert('Invalid Command!');
+    
+    createShell();
+  }
 }
